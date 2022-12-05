@@ -1,0 +1,28 @@
+{
+    "degrees": [
+        {
+            "degree": {
+                "school": "Zhongyuan Institute of Technology",
+                "major": "Thermal and Power Engineering",
+                "type": "BS",
+                "year_conferred": "2015"
+            }
+        },
+        {
+            "degree": {
+                "school": "Tianjin University of Commerce",
+                "major": "Refrigeration Engineering",
+                "type": "MS",
+                "year_conferred": "2018"
+            }
+        },
+        {
+            "degree": {
+                "school": "BU",
+                "major": "Software Engineering",
+                "type": "MS",
+                "year_conferred": "2023"
+            }
+        }
+    ]
+}

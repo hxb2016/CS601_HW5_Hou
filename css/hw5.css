@@ -1,0 +1,240 @@
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font: 14px "Times New Roman", Arial, Tahoma, Helvetica, sans-serif;
+  color: #707070;
+  font-family: "Times New Roman", Georgia, Serif;
+  position: relative;
+  min-width: 790px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 80% 15%;
+  grid-template-areas: 'header' 'main' 'footer';
+}
+body header {
+  grid-area: header;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.header .nav {
+  display: flex;
+  font-size: 18px;
+  color: #fff;
+}
+.header .nav .logo {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+}
+.header .nav .logo img {
+  width: 90%;
+  height: auto;
+}
+.header .nav .navContent {
+  display: flex;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  left: -5%;
+  justify-content: center;
+}
+.header .nav .navContent a {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header .nav .navContent a:hover {
+  color: red;
+}
+@keyframes hand {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(5px, 5px);
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(5px, 5px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.footer {
+  padding-top: 10px;
+  width: 100%;
+  background: #272727;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.footer .footer_b {
+  margin: 0 auto;
+}
+.footer .footer_b .contact span {
+  font-size: 15px;
+  color: #fff;
+}
+.footer .footer_b .weichat .weichat_1 {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  display: block;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  background: url(../images/ico_hand.png);
+  z-index: 999;
+}
+.footer .footer_b .weichat .weichat_1::after {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+  content: "";
+  animation: hand 3s linear infinite;
+  background: url(../images/ico_hand2.png) center no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.footer .footer_b .weichat .weichat_2 {
+  position: absolute;
+  left: 90%;
+  bottom: 50%;
+  width: 200px;
+  margin-left: -146px;
+  margin-bottom: 50px;
+  display: none;
+}
+.footer .footer_b .copy {
+  font-size: 15px;
+}
+.footer .footer_b .copy a {
+  font-size: 15px;
+}
+.footer .footer_b #BS {
+  margin-top: 15px;
+}
+.footer .footer_b #BS span {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 5px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 15px;
+  border-radius: 2px;
+}
+.footer .footer_b #BS span:hover {
+  cursor: pointer;
+  color: #999;
+}
+.footer .footer_b #footer_hide {
+  position: fixed;
+  bottom: -60px;
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #707070;
+  background: #474747;
+  z-index: 999;
+  left: 0;
+}
+main #container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+}
+main #container #degree {
+  margin: auto;
+  width: 30%;
+  height: 30%;
+}
+main #container section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  opacity: 0;
+}
+main #container section h2 {
+  width: 50%;
+  background: url('../images/back2.jpg') repeat center;
+  margin: auto auto 0 auto;
+  text-align: center;
+}
+main #container section #content {
+  position: relative;
+  margin: 5px auto auto auto;
+  width: 50%;
+  height: 60%;
+  background: url('../images/back1.jpg') repeat center;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 33.3333%);
+  overflow: hidden;
+}
+main #container section #content p {
+  position: relative;
+  left: -100%;
+  overflow: hidden;
+  color: white;
+  margin: 10px 10px 5px 10px;
+}
+main #container section #content p span {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
